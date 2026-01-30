@@ -76,6 +76,7 @@ const Home = () => {
       <div className="bg-gray-50 py-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('https://bazaar5.com/image/catalog/pro/category/8.jpg')" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white bg-opacity-90 py-12 rounded-lg">
           <div className="mb-6">
+           
             <img src="https://i.ibb.co/jXsHMKV/Patanjali-Logo-Vector-svg-removebg-preview.png" alt="Patanjali Logo" className="h-20 mx-auto mb-4" />
           </div>
           <h2 className="text-3xl font-bold mb-6 text-[#003060]">Authorized Patanjali Soya Lecithin Dealer</h2>
