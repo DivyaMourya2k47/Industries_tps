@@ -48,7 +48,7 @@ const Products = () => {
       'DM Water': 'https://i.ibb.co/XZyk9sC4/dm-water.jpg',
       'DI Water': 'https://i.ibb.co/RTkDrVFP/di-water.png',
     };
-    return imageMap[product.name] || '/products/default.png';
+    return imageMap[product.name] || 'https://i.ibb.co/DfWMqJVY/default.png';
   };
 
   const categories: ProductCategory[] = [
@@ -132,7 +132,7 @@ const Products = () => {
 
         <div className="space-y-8 max-w-6xl mx-auto">
           {categories
-            .map((category, index) => ({
+            .map((category) => ({
               ...category,
               products: category.products.filter(product =>
                 product.name.toLowerCase().includes(searchTerm.toLowerCase())
