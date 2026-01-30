@@ -16,7 +16,7 @@ const Products = () => {
 
   const getProductImage = (product: Product): string => {
     const imageMap: { [key: string]: string } = {
-      'Cetostearyl Alcohol': 'https://i.ibb.co/60LVrZD5/cetostearyl-alcohol.jpg',
+      'Cetostearyl Alcohol': 'https://i.ibb.co/3mgRCMJh/cetostearyl-alcohol-50-eo.jpg',
       'Cetostearyl Alcohol 50 Mole EO': 'https://i.ibb.co/3mgRCMJh/cetostearyl-alcohol-50-eo.jpg',
       'Cetyl Oleyl Alcohol 5 Mole EO': 'https://i.ibb.co/M59dGHWd/cetyl-oleyl-5-eo.png',
       'Cetyl Oleyl Alcohol 80 Mole EO': 'https://i.ibb.co/7JhDN60D/cetyl-oleyl-80-eo.png',
