@@ -12,41 +12,41 @@ interface ProductCategory {
 }
 
 const Products = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm] = useState('');
 
   const getProductImage = (product: Product): string => {
     const imageMap: { [key: string]: string } = {
-      'Cetostearyl Alcohol': '/products/cetostearyl-alcohol.jpg',
-      'Cetostearyl Alcohol 50 Mole EO': '/products/cetostearyl-alcohol-50-eo.jpg',
-      'Cetyl Oleyl Alcohol 5 Mole EO': '/products/cetyl-oleyl-5-eo.png',
-      'Cetyl Oleyl Alcohol 80 Mole EO': '/products/cetyl-oleyl-80-eo.png',
-      'Lauryl Alcohol': '/products/lauryl-alcohol.png',
-      'Lauryl Alcohol 2 Mole EO (AEO-2)': '/products/lauryl-alcohol-2-eo.png',
-      'Styrenated Phenol 20 Mole EO': '/products/styrenated-phenol.png',
-      'Alfa Olefin Sulphonate (AOS) 40%': '/products/aos-40.png',
-      'Tallow Amine': '/products/tallow-amine.png',
-      'AC-1815 (15 Mole Ethoxylated Tallow Amine)': '/products/default.png',
-      'AC-1820 (20 Mole Ethoxylated Tallow Amine)': '/products/default.png',
-      'Oleic Acid & Derivatives': '/products/oleic-acid.jpg',
-      'Tripoglycerol 3 Oleic Acid Ester': '/products/tripoglycerol-oleate.png',
-      'Palm Oil': '/products/palm-oil.png',
-      'Mineral Oil (LLP)': '/products/mineral-oil.png',
-      'Soya Lecithin': '/products/soya-lecithin.png',
-      'PDMS AK 350 CST': '/products/pdms-ak-350.png',
-      'Monemide OD': '/products/monemide-od.png',
-      'Phenoxy Ethanol': '/products/phenoxy-ethanol.png',
-      'PCMC': '/products/pcmc.png',
-      'Busan 1156': '/products/busan-1156.png',
-      'Busan 1078': '/products/busan-1078.png',
-      'BBK 4884': '/products/bbk-4884.png',
-      'BHT (Butylated Hydroxy Toluene)': '/products/bht.png',
-      'Propylene Glycol': '/products/propylene-glycol.png',
-      'PTSA': '/products/ptsa.png',
-      'Maleic Anhydride': '/products/maleic-anhydride.png',
-      'Sodium Sulphite': '/products/sodium-sulphite.png',
-      'SMBS': '/products/smbs.webp',
-      'DM Water': '/products/dm-water.jpg',
-      'DI Water': '/products/di-water.png',
+      'Cetostearyl Alcohol': 'https://i.ibb.co/60LVrZD5/cetostearyl-alcohol.jpg',
+      'Cetostearyl Alcohol 50 Mole EO': 'https://i.ibb.co/3mgRCMJh/cetostearyl-alcohol-50-eo.jpg',
+      'Cetyl Oleyl Alcohol 5 Mole EO': 'https://i.ibb.co/M59dGHWd/cetyl-oleyl-5-eo.png',
+      'Cetyl Oleyl Alcohol 80 Mole EO': 'https://i.ibb.co/7JhDN60D/cetyl-oleyl-80-eo.png',
+      'Lauryl Alcohol': 'https://i.ibb.co/Q3fq429C/lauryl-alcohol.png',
+      'Lauryl Alcohol 2 Mole EO (AEO-2)': 'https://i.ibb.co/gMdc21Md/lauryl-alcohol-2-eo.png',
+      'Styrenated Phenol 20 Mole EO': 'https://i.ibb.co/nqcnnW6x/styrenated-phenol.png',
+      'Alfa Olefin Sulphonate (AOS) 40%': 'https://i.ibb.co/Ndz86GzV/aos-40.png',
+      'Tallow Amine': 'https://i.ibb.co/1GfRSG3N/tallow-amine.png',
+      'AC-1815 (15 Mole Ethoxylated Tallow Amine)': 'https://i.ibb.co/DfWMqJVY/default.png',
+      'AC-1820 (20 Mole Ethoxylated Tallow Amine)': 'https://i.ibb.co/DfWMqJVY/default.png',
+      'Oleic Acid & Derivatives': 'https://i.ibb.co/9mDvhnfR/oleic-acid.jpg',
+      'Tripoglycerol 3 Oleic Acid Ester': 'https://i.ibb.co/cc1xc6SY/tripoglycerol-oleate.png',
+      'Palm Oil': 'https://i.ibb.co/xKPtd3H7/palm-oil.png',
+      'Mineral Oil (LLP)': 'https://i.ibb.co/Hfm4B748/mineral-oil.png',
+      'Soya Lecithin': 'https://i.ibb.co/WW2fwk88/soya-lecithin.png',
+      'PDMS AK 350 CST': 'https://i.ibb.co/gMwXyPm6/pdms-ak-350.png',
+      'Monemide OD': 'https://i.ibb.co/hRGGS7Y5/monemide-od.png',
+      'Phenoxy Ethanol': 'https://i.ibb.co/MyFzVvrC/phenoxy-ethanol.png',
+      'PCMC': 'https://i.ibb.co/SDC6RQnc/pcmc.png',
+      'Busan 1156': 'https://i.ibb.co/jPky94fS/busan-1156.png',
+      'Busan 1078': 'https://i.ibb.co/SXGz82dY/busan-1078.png',
+      'BBK 4884': 'https://i.ibb.co/HWMJP6c/bbk-4884.png',
+      'BHT (Butylated Hydroxy Toluene)': 'https://i.ibb.co/zHZ8jhdv/bht.png',
+      'Propylene Glycol': 'https://i.ibb.co/Vc3jrnfP/propylene-glycol.png',
+      'PTSA': 'https://i.ibb.co/wrYkLyCn/ptsa.png',
+      'Maleic Anhydride': 'https://i.ibb.co/233FTbCg/maleic-anhydride.png',
+      'Sodium Sulphite': 'https://i.ibb.co/HfQgHmq2/sodium-sulphite.png',
+      'SMBS': 'https://i.ibb.co/3mB32Wtb/smbs.webp',
+      'DM Water': 'https://i.ibb.co/XZyk9sC4/dm-water.jpg',
+      'DI Water': 'https://i.ibb.co/RTkDrVFP/di-water.png',
     };
     return imageMap[product.name] || '/products/default.png';
   };
@@ -140,33 +140,33 @@ const Products = () => {
             }))
             .filter(category => category.products.length > 0 || searchTerm === '')
             .map((category, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="px-6 py-5 bg-[#003060] text-white">
-                <h3 className="text-xl font-bold mb-1">{category.title}</h3>
-                <p className="text-gray-200 text-sm">{category.description}</p>
-              </div>
-              <div className="px-6 py-4 bg-gray-50">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {category.products.map((product, pIndex) => (
-                    <div
-                      key={pIndex}
-                      className="flex items-start bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-                    >
-                      <img
-                        src={getProductImage(product)}
-                        alt={product.name}
-                        className="w-16 h-16 rounded mr-4 flex-shrink-0"
-                      />
-                      <div className="flex-1">
-                        <h4 className="text-gray-800 font-semibold mb-1">{product.name}</h4>
-                        <p className="text-gray-600 text-sm">{product.description}</p>
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="px-6 py-5 bg-[#003060] text-white">
+                  <h3 className="text-xl font-bold mb-1">{category.title}</h3>
+                  <p className="text-gray-200 text-sm">{category.description}</p>
+                </div>
+                <div className="px-6 py-4 bg-gray-50">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {category.products.map((product, pIndex) => (
+                      <div
+                        key={pIndex}
+                        className="flex items-start bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                      >
+                        <img
+                          src={getProductImage(product)}
+                          alt={product.name}
+                          className="w-16 h-16 rounded mr-4 flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <h4 className="text-gray-800 font-semibold mb-1">{product.name}</h4>
+                          <p className="text-gray-600 text-sm">{product.description}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
 
         <div className="mt-12 text-center bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
