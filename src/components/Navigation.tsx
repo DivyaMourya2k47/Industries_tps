@@ -21,7 +21,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <img
-              src="/screenshot_2025-12-23_110123.png"
+              src="/Industries_tps/screenshot_2025-12-23_110123.png"
               alt="TPS Industries"
               className="h-16 w-auto"
             />
