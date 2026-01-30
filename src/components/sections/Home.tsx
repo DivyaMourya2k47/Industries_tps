@@ -76,7 +76,7 @@ const Home = () => {
       <div className="bg-gray-50 py-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('https://bazaar5.com/image/catalog/pro/category/8.jpg')" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white bg-opacity-90 py-12 rounded-lg">
           <div className="mb-6">
-            <img src="https://scontent.fbom20-2.fna.fbcdn.net/v/t39.30808-6/494887608_1151030107039127_8745902744917465416_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=UoyjW-5HA-kQ7kNvwGek0S6&_nc_oc=Adn0CTL1cthaklXT5htFQwVHtaoDPA2dLQv3LUPCPOpyEIAIracHmqLDAuHb7Mlb3Zw&_nc_zt=23&_nc_ht=scontent.fbom20-2.fna&_nc_gid=F1eoAP7AE_6dI7O0YV974A&oh=00_AfqsEyp0tRXecN1LROpknnfnui-XHOkfY88UIEEjT2g8RA&oe=696FA97C" alt="Patanjali Logo" className="h-20 mx-auto mb-4" />
+            <img src="https://clipground.com/images/patanjali-logo-clipart-7.jpg" alt="Patanjali Logo" className="h-20 mx-auto mb-4" />
           </div>
           <h2 className="text-3xl font-bold mb-6 text-[#003060]">Authorized Patanjali Soya Lecithin Dealer</h2>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">
